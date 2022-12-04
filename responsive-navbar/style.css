@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-weight: 400;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #faeade;
+  }
+  
+  .logo img{
+    width: 12rem;
+    padding-left: 20px;
+  }
+  
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+  
+  .nav__link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    
+  }
+  
+  .nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .link:hover {
+    background-color: #ef6603;
+    border-radius: 50px;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  .apply-btn{
+    background-color: white;
+    border-radius: 50px;
+    color: #ef6603;
+    font-weight: bold;
+  }
+
+  
+
+  @media screen and (min-width: 600px) {
+    .nav__link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav__link a {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
